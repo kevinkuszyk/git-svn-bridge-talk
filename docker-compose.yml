@@ -1,0 +1,8 @@
+version: '3'
+services:
+    svn-server:
+      image: "elleflorio/svn-server"
+      ports:
+      - "8000:80"      
+      volumes:
+      - ./volumes/svn-root:/home/svn 
